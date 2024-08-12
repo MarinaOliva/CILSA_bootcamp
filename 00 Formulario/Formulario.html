@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="style.css" id="theme-style">
+</head>
+<body>
+    <div class="container">
+        <img id="toggle-contrast" src="moon.png" alt="Alternar contraste" title="Alternar contraste">
+        <h1>Formulario de Datos Personales</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+            <label for="pais">País de Residencia:</label>
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione su país</option>
+                <option value="ar">Argentina</option>
+                <option value="es">España</option>
+                <option value="mx">México</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="contrast-toogle.js"></script>
+    <script src="form-validation.js"></script>
+</body>
+</html>
