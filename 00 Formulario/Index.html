@@ -12,10 +12,12 @@
         <h1>Formulario de Datos Personales</h1>
         <form>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="El nombre sólo puede contener letras y espacios.">
+
 
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+            <input type="text" id="apellido" name="apellido" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="El apellido sólo puede contener letras y espacios.">
+
 
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
