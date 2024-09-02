@@ -30,8 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
             fechaNacimientoInput.focus();
             return;
         }
-
+     
+    // Mostrar mensaje de error si hay uno
+    if (errorMessage) {
+        errorMessageDiv.textContent = errorMessage;
+    } else {
         // Mostrar confirmación de envío de datos
         alert('¡Gracias! Sus datos han sido enviados con éxito.');
+    }    
     });
 });
